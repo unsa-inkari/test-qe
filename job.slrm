@@ -2,8 +2,8 @@
 #SBATCH --job-name          test-qe
 #SBATCH --time              720:00:00
 #SBATCH --nodes             1
-#SBATCH --tasks-per-node    18
-#SBATCH --mem               62GB
+#SBATCH --ntasks-per-node   18
+#SBATCH --mem               1536MB # 1.5GB
 #SBATCH --error             output-%j.error
 #SBATCH --output            output-%j.output
 
